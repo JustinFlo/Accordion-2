@@ -1,0 +1,50 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #042033;
+}
+.accordion {
+    width: 800px;
+}
+.accordion .content8x {
+    position: relative;
+    margin: 10px 20px;
+}
+.accordion .content8x .label{
+    position: relative;
+    padding: 10px;
+    background: #2694af;
+    color: #fff;
+    cursor: pointer;
+}
+.accordion .content8x .label::before {
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY();
+    font-size: 1.5em;
+}
+.accordion .content8x.active .label::before{
+    content: '-';
+}
+.a.content8x .content8x .content{
+    position: relative;
+    background: #fff;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+}
+.a.content8x .content8x.active .content{
+    height: 150px;
+    padding: 10px;
+}

@@ -1,0 +1,57 @@
+<!doctype html>
+ <html lang="en"> 
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Accordion</title> 
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head> 
+
+<body> 
+<div class="Accordion">
+    <div class="content8x">
+        <div class="label">List One</div>
+        <div class="content">
+            <P>PlaceHolder</P>
+
+        </div>
+    </div>
+    <div class="content8x">
+        <div class="label">List Two</div>
+        <div class="content">
+            <P>PlaceHolder</P>
+
+        </div>
+    </div>
+    <div class="content8x">
+        <div class="label">List Three</div>
+        <div class="content">
+            <P>PlaceHolder</P>
+
+        </div>
+    </div>
+    <div class="content8x">
+        <div class="label">List Four</div>
+        <div class="content">
+            <P>PlaceHolder</P>
+
+        </div>
+    </div>
+</div>
+
+<script>
+    const Accordion = document.getElementsByClassName
+    ('content8x');
+
+    for (i = 0; i<Accordion.length; i++){
+        Accordion[i].addEventListener('click', function(){
+            this.classlist.toggle('active')
+        })
+    }
+
+</script>
+</body> 
+
+</html>
